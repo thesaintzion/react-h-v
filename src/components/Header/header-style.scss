@@ -1,0 +1,112 @@
+$purle: #5a2e8a;
+$light-gray: #a8a8a8;
+$dark-gray: #555555;
+$lighter-gray: #f1f1f1;
+$light-green: #99c522;
+$red: #d64521;
+
+header{
+    width: 100% !important; 
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+
+    a{
+        font-size: 13px !important;
+        font-weight: 600 !important;
+    }
+
+.upper-header{
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    select{
+        font-size: 13px;
+        color: $light-gray ;
+    }
+}
+}
+    // nav
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        a{
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+.main-nav {
+
+    a{
+        padding:15px 20px 15px 20px;
+        &:first-of-type{
+            padding-left: 0;
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+    }
+    
+.social {
+
+    a{
+        padding:15px 10px 15px 10px;
+        text-transform: uppercase;
+
+    }
+    
+}
+    
+.account {
+
+    a{
+        
+        text-transform: uppercase;
+
+    }
+    
+}
+       
+    }
+
+
+
+@media (min-width: 1200px){
+.container {
+    // width: 1170px;
+    // display: ;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+}
+
+
+
+    
+
+.app-logo{
+    max-width: 100% !important;
+    /* height: 50px !important; */
+    float: left;
+ }
+
+ 
+
+@media (prefers-reduced-motion: no-preference) {
+    /* .app-logo {
+        animation: App-logo-spin infinite 20s linear;
+    } */
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
