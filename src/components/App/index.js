@@ -23,14 +23,14 @@ state = {
 url = 'http://localhost:3600/api/no-whatsapp/v1';
 componentDidMount(){
 // Get users
-axios.get(`${this.url}/users`).then(res => {
-  console.log('data', res.data,);
-this.setState({
-  users: res.data.users
-});
-}).catch( err => {
-  console.error('Error getting users', err);
-})
+// axios.get(`${this.url}/users`).then(res => {
+//   console.log('data', res.data,);
+// this.setState({
+//   users: res.data.users
+// });
+// }).catch( err => {
+//   console.error('Error getting users', err);
+// })
 
 }
 
@@ -44,7 +44,7 @@ this.setState({
       <Switch>
         {/* main layout */}
         <AppRoute exact path='/'  component={Home}  layout={MainLayout}/>
-        <AppRoute  path='register'  component={Register}  layout={MainLayout}/>
+        <AppRoute  path='/register'  component={Register}  layout={MainLayout}/>
 
       </Switch>
       </Suspense>

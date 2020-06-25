@@ -2,7 +2,8 @@ import React, { } from 'react';
 import './home-style.scss';
 import { FormControlLabel, Switch, Fab } from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
-import showCaseImage from '../../assets/img/home-search-bg.jpg'
+import showCaseImage from '../../assets/img/home-search-bg.jpg';
+
 
 
 
