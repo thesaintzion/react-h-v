@@ -8,6 +8,8 @@ import MainSpinal from '../_spinals/Main-Spinal';
 // Components
 import AppRoute from '../_routes/App-Router';
 import Register from '../Register';
+import Login from '../Login';
+import AuthLayout from '../_layouts/Auth-Layout';
 const Home = lazy(() =>  import('../Home'));
 // const AppRoute = lazy(() =>  import('../_routes/App-Router'));
 const MainLayout = lazy(() =>  import('../_layouts/Main-Layout'));
@@ -45,7 +47,7 @@ componentDidMount(){
         {/* main layout */}
         <AppRoute exact path='/'  component={Home}  layout={MainLayout}/>
         <AppRoute  path='/register'  component={Register}  layout={MainLayout}/>
-
+        <AppRoute  path='/login'  component={Login}  layout={AuthLayout}/>
       </Switch>
       </Suspense>
   </div>

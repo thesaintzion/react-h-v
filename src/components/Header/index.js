@@ -12,6 +12,7 @@ class Header extends React.Component{
         
         return(
 <React.Fragment>
+    <div class="header">
     <header className="bg-ligh shadow-sm">
     <div  className="upper-header ">
     <div className="container">
@@ -31,7 +32,7 @@ class Header extends React.Component{
               <h6 className="mb-0 text-bolder">202-555-0182</h6>
           </div>
           <div className="ml-5">
-          <NavLink exact to="/" className="btn btn-outline-danger">CREATE PROPERTY</NavLink>
+          <NavLink exact to="/register" className="btn btn-outline-danger">CREATE PROPERTY</NavLink>
           </div>
       </div>
       </div> 
@@ -66,13 +67,14 @@ class Header extends React.Component{
           </div>
           
           <div className="account ml-4">
-          <NavLink exact to="/register" className="h-100 d-flex align-items-center"> <i className="fa fa-user"></i> <span className="ml-2">Singnin/Register</span></NavLink>
+          <NavLink exact to="/login" className="h-100 d-flex align-items-center"> <i className="fa fa-user"></i> <span className="ml-2">Singn In</span></NavLink>
           </div>
      
       </div>
       </div>
       </div>
 </nav>
+</div>
     </React.Fragment>
 
         )

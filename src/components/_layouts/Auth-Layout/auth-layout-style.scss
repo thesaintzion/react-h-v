@@ -4,75 +4,19 @@ $dark-gray: #555555;
 $lighter-gray: #f1f1f1;
 $light-green: #99c522;
 $red: #d64521;
-.header{
+.auth{
 header{
     width: 100% !important; 
+    position: sticky;
     top: 0;
-    right: 0; 
-    background-color: #ffffff;
+    z-index: 9999;
+   padding-top: 10px;
 
     a{
         font-size: 13px !important;
         font-weight: 600 !important;
     }
-
-.upper-header{
-    padding-top: 20px;
-    padding-bottom: 10px;
-
-    select{
-        font-size: 13px;
-        color: $light-gray ;
-    }
 }
-}
-    // nav
-    nav{
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-        a{
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 600;
-        }
-        
-.main-nav {
-
-    a{
-        padding:15px 20px 15px 20px;
-        &:first-of-type{
-            padding-left: 0;
-        }
-        &:hover{
-            color: #fff;
-        }
-    }
-    }
-    
-.social {
-
-    a{
-        padding:15px 10px 15px 10px;
-        text-transform: uppercase;
-
-    }
-    
-}
-    
-.account {
-
-    a{
-        
-        text-transform: uppercase;
-
-    }
-    
-}
-       
-    }
-
-
 
 @media (min-width: 1200px){
 .container {

@@ -1,14 +1,14 @@
 import React, { } from 'react';
-import './register-style.scss';
+import './login-style.scss';
 // import { FormControlLabel, Switch, Fab } from '@material-ui/core';
-// import Icon from '@material-ui/core/Icon';
+import Icon from '@material-ui/core/Icon';
 // import showCaseImage from '../../assets/img/home-search-bg.jpg';
 import axios from 'axios';
 import Snackbar from '@material-ui/core/Snackbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close'
-
+import CloseIcon from '@material-ui/icons/Close';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
 
 
@@ -18,7 +18,7 @@ import CloseIcon from '@material-ui/icons/Close'
 //   return <MuiAlert elevation={6} variant="filled" {...props} />;
 // }
 
-class Register extends React.Component{
+class Login extends React.Component{
   
 state = {
   apps : [
@@ -122,57 +122,41 @@ handleThemeChange = (event) => {
    
     render(){ 
         return(
-       <div>
-          
-      <Snackbar
-        anchorOrigin={{
-           vertical: 'bottom',
-           horizontal: 'center',
-         }}
-        open={this.state.snackbarOpen}
-        autoHideDuration={6000}
-        onClose={this.handleClose}
-        message="User added."
-        action={
-          <React.Fragment>
-           
-            <IconButton size="small" aria-label="close" color="inherit" onClick={this.handleClose}>
-              <CloseIcon fontSize="small" />
-            </IconButton>
-          </React.Fragment>
-        }
-      />
-      <div className={`dashboard  animated fadeInUp  ${this.state.darkTheme ? 'bg-dark text-warning': ''}`}>
+       <div className="login">
+      <div className={`animated fadeInUp  ${this.state.darkTheme ? 'bg-dark text-warning': ''}`}>
      <section className="container">
-       <div className="mb-5">
-       <h3>Register / Sign</h3>
-       <button className="btn  btn-outline-danger rounded-lg">SIGN IN WITH GOOGLE</button>
-       <button onClick={this.addUser} className="btn  btn-outline-dark ml-4 rounded-lg">AUTO ADD USER</button>
-     
+       <div>
+       <h3>Sign In</h3>
+       <p>Login with your social accounts.</p>
        </div>
-       <div className="row">
-        
-         {
-         this.state.users.map(user => {
-           return(
-            <div key={user._id} className="col-md-4">
-             <div className="card mb-4">
-               <div className="card-body">
-           <h3>{user.name}</h3>
-           <p>{user.email}</p>
-           <p>{user.gmail_Id}</p>
-           <img width="40" className="rounded-circle shadow" src={user.picture}></img>
-         
+       <div>
+       <Button
+       className="bg-primary text-white mb-3"
+        variant="contained"
+        color="default"
+        startIcon={<Icon>person</Icon>} >
+        Facebook
+      </Button>
+      </div>
+<div>
+      <Button
+       className="bg-danger mb-3 text-white"
+        variant="contained"
+        color="default"
+        startIcon={<Icon>person</Icon>} >
+        Google
+      </Button>
+      </div>
+      <div>
 
-               </div>
-             </div>
-             </div>
-           )
-         })
-       }
-      
-       </div>
-  
+      <Button
+       className="bg-dark mb-3 text-white"
+        variant="contained"
+        color="default"
+        startIcon={<Icon>person</Icon>} >
+        Github
+      </Button>
+      </div>
      </section>
       </div>
       </div>
@@ -181,4 +165,4 @@ handleThemeChange = (event) => {
     }
 }
 
-export default Register;
+export default Login;
