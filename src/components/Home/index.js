@@ -3,6 +3,7 @@ import './home-style.scss';
 import { FormControlLabel, Switch, Fab } from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
 import showCaseImage from '../../assets/img/home-search-bg.jpg';
+import CarouselComponent from '../Carousel';
 
 
 
@@ -66,8 +67,8 @@ handleThemeChange = (event) => {
 <h1>TESTIMONIALs</h1>
      </section>
 
-     <section className="section-partners">
-<h1>PARTNER</h1>
+     <section className="section-carocel">
+<CarouselComponent/>
      </section>
 
      <section className="section-partners">

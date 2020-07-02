@@ -41,12 +41,15 @@
      }
 }
 
-section:not(.section-showcase){
+section:not(.section-showcase ){
     padding: 30px 0 30px 0;
     text-align: center;
     min-height: 400px;
-    background-color: #ddd;
+    // background-color: #ddd;
     margin-bottom: 20px;
     color: #5a2e8a;
+}
+.section-carocel{
+    padding: 0 !important;
 }
 }
